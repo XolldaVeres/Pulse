@@ -1,0 +1,19 @@
+.button {
+    height: 32px;
+    width: 153px;
+    border-radius: 5px;
+    background-color:$main-color;
+    border: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    &_main {
+        margin-top: 70px;
+        height: 54px;
+        width: 303px;
+        font-size: 16px;
+    }
+}
