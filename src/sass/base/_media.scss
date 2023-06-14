@@ -44,6 +44,12 @@
             margin-top: 15px;
         }
     }
+    .consultation {
+        padding: 100px 40px 108px;
+        &__title {
+            font-size: 27px;
+        }
+    }
 }
 @media screen and ( max-width: 767px ) {
     .header {
@@ -101,12 +107,25 @@
             font-size: 13px;
         }
     }
+    .consultation {
+        padding: 80px 40px 80px;
+        &__title {
+            font-size: 21px;
+            line-height: 36px;
+        }
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .feed-form {
+        width: 280px;
+    }
 }
 @media screen and ( max-width: 575px ) {
     .header {
         justify-content: space-around;
         &__logo {
-            width: 100px;
+            width: 120px;
             img {
                 width: 100%;
             }
@@ -115,10 +134,10 @@
             font-size: 15px;
         }
         &__official {
-            font-size: 6px;
+            font-size: 10px;
             line-height: 6px;
             span {
-                font-size: 7px;
+                font-size: 12px;
                 line-height: 7px;
             }
         } 
@@ -184,6 +203,30 @@
         }
         &__subtitle {
             margin-top: 10px;
+        }
+    }
+    .consultation {
+        padding: 80px 40px 80px;
+        &__title {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        br {
+            display: none;
+        }
+    }
+    .feed-form {
+        margin-top: 25px;
+        width: 230px;
+    }
+    .button {
+        &_submit {
+            font-size: 14px;
+            height: 50px;
         }
     }
 }   
