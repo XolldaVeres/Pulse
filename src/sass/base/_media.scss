@@ -120,6 +120,11 @@
     .feed-form {
         width: 280px;
     }
+    .carousel {
+        &__inner {
+            width: 576px;
+        }
+    }
 }
 @media screen and ( max-width: 575px ) {
     .header {
@@ -227,6 +232,11 @@
         &_submit {
             font-size: 14px;
             height: 50px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 320px;
         }
     }
 }   
