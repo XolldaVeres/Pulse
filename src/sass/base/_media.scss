@@ -50,6 +50,15 @@
             font-size: 27px;
         }
     }
+    .catalog {
+        &__title {
+            font-size: 27px;
+        }
+        &__content {
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 @media screen and ( max-width: 767px ) {
     .header {
@@ -125,6 +134,21 @@
             width: 576px;
         }
     }
+    .catalog {
+        &__title {
+            font-size: 21px;
+        }
+        &__content {
+            justify-content: center;
+            align-items: center;
+        }
+        &__tab {
+            width: 150px;
+            height: 45px;
+            line-height: 43px;
+            font-size: 15px;
+        }
+    }
 }
 @media screen and ( max-width: 575px ) {
     .header {
@@ -132,7 +156,7 @@
         &__logo {
             width: 120px;
             img {
-                width: 100%;
+                width: 105%;
             }
         }
         &__phone {
@@ -140,10 +164,11 @@
         }
         &__official {
             font-size: 10px;
-            line-height: 6px;
+            line-height: 12px;
             span {
+                margin-top: 3px;
                 font-size: 12px;
-                line-height: 7px;
+                line-height: 13px;
             }
         } 
         .button {
@@ -238,5 +263,75 @@
         &__inner {
             width: 320px;
         }
+    }
+    .catalog {
+        &__title {
+            font-size: 18px;
+        }
+        &__content {
+            justify-content: center;
+            align-items: center;
+        }
+        &__tab {
+            width: 93px;
+            height: 34px;
+            line-height: 33px;
+            font-size: 10px;
+            transform: skew(0deg);
+            div {
+            transform: skew(0deg);
+            }
+        }
+        &-item {
+            width: 240px;
+            min-height: 406px;
+            &__subtitle {
+                font-size: 14px;
+            }
+            &__descr {
+                font-size:10px ;
+                line-height: 18px;
+            }
+            &__list {
+                li {
+                    font-size: 10px;
+                    line-height: 14px;
+                    padding: 15px 0;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 19px;
+                        left: -10px;
+                        display: block;
+                        height:4px;
+                        width:4px;
+                    }
+                }
+            }
+            &__img {
+                height: 180px;
+            }
+            &__link {
+                font-size: 12px;
+            }
+            &__old-price {
+                font-size: 12px;
+                line-height: 20x;
+            }
+            &__price {
+                line-height: 20px;
+                font-size: 16px;
+            }
+        }
+        
+        .button {
+            &_mini {
+                width: 93px;
+                height: 34px;
+                line-height: 33px;
+                font-size: 10px;
+            }
+        }
+
     }
 }   
