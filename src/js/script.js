@@ -41,4 +41,24 @@ $(document).ready(function(){
         toggleSlide('.catalog-item__link')
         toggleSlide('.catalog-item__back')
 
+        // Modal
+        // получаем дата класс, проявляем его
+        $('[data-modal=consultation]').on('click', function() {
+            $('.overlay, #consultation').fadeIn('slow');
+        });
+
+        // крестик реагирует на все виды окон
+        $('.modal__close').on('click', function() {
+           $('.overlay, #consultation, #thanks, #order').fadeOut('slow')
+        });
+
+
+        // скрипт меняет название товара (другой товар - другое имя)
+        $('.button_mini').each(function(i) {
+            $(this).on('click', function() {
+                $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+            });
+        });
+
 });
